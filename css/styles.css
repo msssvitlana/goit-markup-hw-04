@@ -73,16 +73,18 @@ display: flex;
 align-items: center;
 gap: 40px;
 }
+.header-nav-item-Studio {
+position: relative;
+}
 .header-nav-item-Studio ::after {
   display: block;
   position: absolute;
+  top: 20px;
   content: "";
   border-radius: 2px;
   width: 48px;
   height: 4px;
   background-color: #404bbf;
-  margin: 20px 0 auto;
-
 }
 
 .header-nav-link {
@@ -97,7 +99,8 @@ gap: 40px;
 .header-nav-link:hover,
 .header-nav-link:focus,
 .adress-info-link:hover,
-.adress-info-link:focus {
+.adress-info-link:focus,
+.header-nav-item-Studio {
 color: #404bbf;
 }
 .adress-info-list {
