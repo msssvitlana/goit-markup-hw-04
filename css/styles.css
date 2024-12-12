@@ -40,6 +40,7 @@ border-bottom: 1px solid #e7e9fc;
 }
 .page-header-container {
   display: flex;
+  align-items: center;
   justify-content: flex-start;
   width: 1158px;
   padding: 0 15px;
@@ -72,6 +73,18 @@ display: flex;
 align-items: center;
 gap: 40px;
 }
+.header-nav-item-Studio ::after {
+  display: block;
+  position: absolute;
+  content: "";
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  background-color: #404bbf;
+  margin: 20px 0 auto;
+
+}
+
 .header-nav-link {
  padding: 24px 0;
  display: block;
@@ -114,9 +127,15 @@ width: 1158px;
 .main-page {
 background-color: #2e2f42;
 padding: 188px 0;
-background-size: auto auto;
-background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(./images/people-office.jpg);
+background-size: cover;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+ background-repeat: no-repeat;
+background-position: bottom 50% left 50%;
+
+width: 1440px;
+margin: 0 auto;
  }
+
 .main-page-name {
 display: block;
 
