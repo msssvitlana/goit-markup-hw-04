@@ -76,13 +76,14 @@ gap: 40px;
 .header-nav-item-Studio {
 position: relative;
 }
-.header-nav-item-Studio ::after {
+.header-nav-item-Studio::after {
   display: block;
   position: absolute;
-  top: 20px;
+  bottom: -1px;
+  left: 0;
   content: "";
   border-radius: 2px;
-  width: 48px;
+  width: 100%;
   height: 4px;
   background-color: #404bbf;
 }
@@ -95,6 +96,7 @@ position: relative;
  line-height: 1.5;
  letter-spacing: 0.02em;    
  color: #2e2f42;
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-link:hover,
 .header-nav-link:focus,
@@ -132,9 +134,8 @@ background-color: #2e2f42;
 padding: 188px 0;
 background-size: cover;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
- background-repeat: no-repeat;
+background-repeat: no-repeat;
 background-position: bottom 50% left 50%;
-
 width: 1440px;
 margin: 0 auto;
  }
@@ -192,7 +193,6 @@ cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: center;
- 
   margin: 0 auto;
   width: 1128px;
   gap: 24px;
@@ -200,7 +200,19 @@ cursor: pointer;
  .advantages-item {
   width: calc((100% - 72px) / 4);
  }
+ .advantages-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    padding: 24px 100px;
+ }
 .advantages-name{
+  margin-top: 8px;
   padding-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -208,6 +220,10 @@ cursor: pointer;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+}
+.advantages-item-icon {
+  display: block;
+  
 }
 .advantages-descr{
   font-size: 16px;
@@ -229,7 +245,6 @@ cursor: pointer;
   display: block;
   }
   .specialist-team {
- 
   margin-bottom: 72px;
   text-transform: capitalize;
   font-weight: 700;
@@ -274,7 +289,16 @@ cursor: pointer;
   text-align: center;
   color: #434455;
   } 
-
+    .specialist-contacts {
+      display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 24px;
+    }
+    .specialist-contacts-list {
+      flex-direction: row;
+    }
   .work-example {
     padding: 120px 0 120px 0;
   }
