@@ -376,16 +376,14 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       0px 1px 1px rgba(46, 47, 66, 0.16),
       0px 2px 1px rgba(46, 47, 66, 0.08);  
   }
-    .application-item .overlay-text:hover {
-      transform: translateY(0%);
-    }
+  
   .application-photo-container {
     display: flex;
     position: relative;
     overflow: hidden;
   }
-    .overlay-text .application-item:hover {
-    transform: translateY(100%);
+   .application-item:hover .overlay-text  {
+    transform: translateY(0%);
      }
   .application-photo {
   display: block;
